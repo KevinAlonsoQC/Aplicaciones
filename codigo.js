@@ -95,77 +95,77 @@
 
 // Problema de Objetos *****************************************
 
-// class Celular{
-//     constructor(nombre,color,peso,resPantalla,resCamara,ram){
-//         this.nombre = nombre;
-//         this.color = color;
-//         this.peso = peso;
-//         this.resPantalla = resPantalla;
-//         this.resCamara = resCamara;
-//         this.ram = ram;
-//         this.encendido = false;
-//     }
-//     infoCelular(){
-//         return`<b>${this.nombre}</b></br>
-//         Color: ${this.color}</br>
-//         Peso: ${this.peso}<br>
-//         Resolucion de Pantalla: ${this.resPantalla}</br>
-//         Resolucion de Camara: ${this,this.resCamara}</br>
-//         Ram:${this.ram}</br>`;
+class Celular{
+    constructor(nombre,color,peso,resPantalla,resCamara,ram){
+        this.nombre = nombre;
+        this.color = color;
+        this.peso = peso;
+        this.resPantalla = resPantalla;
+        this.resCamara = resCamara;
+        this.ram = ram;
+        this.encendido = false;
+    }
+    infoCelular(){
+        return`<b>${this.nombre}</b></br>
+        Color: ${this.color}</br>
+        Peso: ${this.peso}<br>
+        Resolucion de Pantalla: ${this.resPantalla}</br>
+        Resolucion de Camara: ${this,this.resCamara}</br>
+        Ram:${this.ram}</br>`;
         
         
-//     }
-//     prender(){
-//         if (this.encendido == false){
-//             alert("Celular Prendiendo");
-//             this.encendido = true;
+    }
+    prender(){
+        if (this.encendido == false){
+            alert("Celular Prendiendo");
+            this.encendido = true;
 
-//         }else{
-//             alert("Celular ya encendido");
-//         }
-//     }
-//     reiniciar(){
-//         if (this.encendido == true){
-//             alert("ReiniciandoCelular");
-//             this.encendido = true;
+        }else{
+            alert("Celular ya encendido");
+        }
+    }
+    reiniciar(){
+        if (this.encendido == true){
+            alert("ReiniciandoCelular");
+            this.encendido = true;
 
-//         }else{
-//             alert("No se puede reiniciar");
-//         }
-//     }
-//     tomarFoto(){
-//         alert(`Tomar foto en una resolucion de ${this.resCamara}`);
-//     }
-//     grabarVideo(){
-//         alert(`Grabar video en resolucion ${this.resCamara}`);
-//     }
+        }else{
+            alert("No se puede reiniciar");
+        }
+    }
+    tomarFoto(){
+        alert(`Tomar foto en una resolucion de ${this.resCamara}`);
+    }
+    grabarVideo(){
+        alert(`Grabar video en resolucion ${this.resCamara}`);
+    }
 
 
-// }
+}
 
-// class CelularAltaGama extends Celular{
-//     constructor(nombre,color,peso,resPantalla,resCamara,ram,rce){
-//         super(nombre,color,peso,resPantalla,resCamara,ram)
-//         this.rce = rce;
-//     }
-//     grabarVideoLento(){
-//         alert("Estas en camara lenta");
-//     }
-//     reconocimientoFacial(){
-//         alert("Vamos a reconocer las cara");
-//     }
-//     altaGamaInfo(){
-//         return this.infoCelular() + `Resolucion Extra: ${this.rce}`;
-//     }
+class CelularAltaGama extends Celular{
+    constructor(nombre,color,peso,resPantalla,resCamara,ram,rce){
+        super(nombre,color,peso,resPantalla,resCamara,ram)
+        this.rce = rce;
+    }
+    grabarVideoLento(){
+        alert("Estas en camara lenta");
+    }
+    reconocimientoFacial(){
+        alert("Vamos a reconocer las cara");
+    }
+    altaGamaInfo(){
+        return this.infoCelular() + `Resolucion Extra: ${this.rce}`;
+    }
 
-// }
+}
 
-// const celular1 = new Celular("celular1","azul","40g","800x200px","full hd","2GB");
-// const celular2 = new Celular("celular2","rojo","40g","800x200px","full 2k","3GB");
-// const celular3 = new CelularAltaGama("celular3","rosado","30g","400x200px","full 4k","8GB","si");
+const celular1 = new Celular("celular1","azul","40g","800x200px","full hd","2GB");
+const celular2 = new Celular("celular2","rojo","40g","800x200px","full 2k","3GB");
+const celular3 = new CelularAltaGama("celular3","rosado","30g","400x200px","full 4k","8GB","si");
 
-// document.write(`${celular1.infoCelular()}</br>
-// ${celular2.infoCelular()}</br>
-// ${celular3.altaGamaInfo()}`);
+document.write(`${celular1.infoCelular()}</br>
+${celular2.infoCelular()}</br>
+${celular3.altaGamaInfo()}`);
 
 // Fin de problema *****************************************

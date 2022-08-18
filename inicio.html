@@ -1,0 +1,231 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    
+
+    <!----------------- META ----------------------------->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=2">
+
+    <!----------------- FIN META ----------------------------->
+
+    <!---////////////////////////////////////////////////////////---->
+    <!---////////////////////////////////////////////////////////---->
+
+    <!----------------- LINK ----------------------------->
+    
+    <link rel="stylesheet" href="{% static 'static/tienda/iconos/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'static/tienda/css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'static/tienda/css/PERROS Y GATOS.css' %}">
+    <link rel="stylesheet" href="{% static 'static/tienda/css/descuentoos.css' %}">
+    <link rel="stylesheet" href="{% static 'static/tienda/css/pidepagina.css' %}">
+    <link rel="stylesheet" href="{% static 'static/tienda/css/index.css' %}">
+
+    <!----------------- FIN LINK ----------------------------->
+
+    <!---////////////////////////////////////////////////////////---->
+    <!---////////////////////////////////////////////////////////---->
+
+    <!----------------- OTRO ----------------------------->
+
+    <title>Document</title>
+
+    <!----------------- FIN OTRO ----------------------------->
+
+    <!---////////////////////////////////////////////////////////---->
+    <!---////////////////////////////////////////////////////////---->
+
+</head>
+
+
+<body id="bodyindex" style="background:url(../static/tienda/img/fondos/fondo.jpg);">
+
+    <!----------------- MENU ----------------------------->
+
+    <footer id="padre-footer">
+
+        <div id="logo-footer"><img src="{% static 'static/tienda/img/logo.jpg' %}"></div>
+
+        <div id="listYicon-footer">
+            <div id="iconos-footer" class="caja1">
+                <leabel>
+                    <div class="iconos-3-footer"><a href="https://www.instagram.com/angelolking/"
+                            class="fa-brands fa-instagram"></a></div>
+                </leabel>
+                <label>
+                    <div class="iconos-3-footer"><a href="https://www.facebook.com" class="fa-brands fa-facebook"></a>
+                    </div>
+                </label>
+                <leabel>
+                    <div class="iconos-3-footer"><a href="https://twitter.com" class="fa-brands fa-twitter"></a></div>
+                </leabel>
+            </div>
+            <div id="padre2" class="caja2">
+                <ul class="lista">
+                    <li><a href="carrito" class="fa-solid fa-cart-arrow-down">Carrito</a>
+                        <ul>
+                            <li><a href="historial de compras">Historial  de pedidos</a></li>
+                            <li><a href="seguimiento de pedido">Seguimiento de pedido</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contactanos.html">Contactanos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="apoyanos.html">Colabora</a>
+                        <ul>
+                            <li><a href="suscribirse.html">Suscribirse</a></li>
+                            <li><a href="canselarsubs.html">Cancelar Subs</a></li>
+                            <li><a href="apoyanos.html">Donaciones</a></li>
+                            <li><a href="api">Adopcion</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://127.0.0.1:8000/">Inicio</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="login">
+            <button id="iconologin"><a href="login.html" class="fa-solid fa-circle-user"></a></button>
+        </div>
+
+    </footer>
+
+    <!----------------- MENU ----------------------------->
+
+    <!---////////////////////////////////////////////////////////---->
+    <!---////////////////////////////////////////////////////////---->
+
+    <div style="height:5em;"></div>
+
+
+
+    <!-- /************** SECTION DE DESCUENTO ***********************/ -->
+
+    <div id="aa">a</div>
+    <div class="divv">
+        <h1 class="escoga">OFERTAS DE LA SEMANA</h1>
+    </div>
+
+
+    <main id="padre-sec-desc">
+        <section class="cont-des">
+            <article class="box-desc">
+                <article class="img-des">
+                    <img src="{% static 'tienda/img/venta/DESCUENTO/articuloperro (1).png'%}">
+                </article>
+                <article class="content-desc">
+                    <a href="#">20% de DESCUENTO</a>
+                </article>
+            </article>
+        </section>
+        <section class="cont-des">
+            <article class="box-desc">
+                <article class="img-des">
+                    <img src="{% static 'tienda/img/venta/DESCUENTO/comidagato (4).png' %}">
+                </article>
+                <article class="content-desc">
+                    <a href="#">50% de DESCUENTO</a>
+                </article>
+            </article>
+        </section>
+        <section class="cont-des">
+            <article class="box-desc">
+                <article class="img-des">
+                    <img src="{% static 'tienda/img/venta/DESCUENTO/comidaperro (1).png' %}">
+                </article>
+                <article class="content-desc">
+                    <a href="#">45% de DESCUENTO</a>
+                </article>
+            </article>
+        </section>
+        <section class="cont-des">
+            <article class="box-desc">
+                <article class="img-des">
+                    <img src="{% static 'tienda/img/venta/gatos/comida/comidagadasdasto (5).png'%}">
+                </article>
+                <article class="content-desc">
+                    <a href="#">10% de DESCUENTO</a>
+                </article>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- /************** FIN DESCUENTO ***********************/ -->
+
+    <div class="divv">
+        <h1 class="escoga">CATEGORIAS</h1>
+    </div>
+
+
+    <!-- /************** SECTION ENTA ***********************/ -->
+
+    <main id="pyg">
+        <section class="container">
+            <article class="box">
+                <article class="imgbx">
+                    <img src="{% static 'tienda/img/venta/perros/perros.jpg'%}">
+                </article>
+                <article class="content">
+                    <a href="ventajugetesperro.html">JUEGOS PERROS</a>
+                    <a href="ventaperro-comida.html">COMIDA PERROS</a>
+                </article>
+            </article>
+        </section>
+        <section class="container">
+            <article class="box">
+                <article class="imgbx">
+                    <img src="{% static 'tienda/img/venta/gatos/gatos.jpg'%}">
+                </article>
+                <article class="content">
+                    <a href="ventagatoojugete.html">JUEGOS GATOS</a>
+                    <a href="ventagatocomida.html">COMIDA GATOS</a>
+                </article>
+            </article>
+        </section>
+    </main>
+
+    <!-- /************** FIN VENTA ***********************/ -->
+
+    <!---////////////////////////////////////////////////////////---->
+    <!---////////////////////////////////////////////////////////---->
+
+    <!-- /************** PIE DE PAGINA ***********************/ -->
+
+    <footer class="pie-de-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="">
+                        <img src="{% static 'static/tienda/img/logo.jpg' %}" alt="Logo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.instagram.com/angelolking/" class="fa-brands fa-instagram"></a>
+                    <a href="https://www.facebook.com" class="fa-brands fa-facebook"></a>
+                    <a href="https://twitter.com" class="fa-brands fa-twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>logo</b> - todos los derechos reservados</small>
+        </div>
+    </footer>
+
+    <!-- /************** FIN PIE DE PAGINA ***********************/ -->
+
+</body>
+
+</html>
